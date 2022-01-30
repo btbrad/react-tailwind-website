@@ -1,12 +1,22 @@
 import React from 'react'
-import logo from './logo.svg'
 import './App.css'
+import tw from 'twin.macro'
+import styled from 'styled-components'
+import TopSection from './containers/TopSection'
+
+const AppContainer = styled.div`
+  ${tw`
+    flex
+    w-full
+    h-full
+  `}
+`
 
 function App() {
   return (
-    <div className="App">
-      <h1 className="text-3xl font-bold underline">Hello world!</h1>
-    </div>
+    <AppContainer>
+      <TopSection />
+    </AppContainer>
   )
 }
 
